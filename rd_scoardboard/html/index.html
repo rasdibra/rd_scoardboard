@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RD Scoardboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main id="scoreboard" class="scoreboard hidden">
+        <!-- Cover/welcome page removed: scoreboard opens directly on players pages. -->
+
+        <section id="openBook" class="open-book hidden" aria-label="Open scoreboard book">
+            <div class="book-shadow"></div>
+            <div class="book-page left-page">
+                <header class="page-header">
+                    <span id="serverNameLeft">Eagle County RP</span>
+                    <small id="leftPageLabel">Faqja majtas</small>
+                </header>
+                <h2 id="playersOnlineTitle">Lojtarët Online</h2>
+                <div id="leftList" class="player-list"></div>
+                <footer class="page-footer"><span id="leftPageNum">Faqe 1</span></footer>
+            </div>
+
+            <div class="book-gutter"></div>
+
+            <div class="book-page right-page">
+                <header class="page-header">
+                    <span id="serverNameRight">Eagle County RP</span>
+                    <small id="updatedAt">Përditësuar --:--</small>
+                </header>
+                <h2 id="scoreboardTitle">RD Scoardboard</h2>
+                <div id="rightList" class="player-list"></div>
+                <footer class="page-footer"><span id="rightPageNum">Faqe 2</span></footer>
+            </div>
+
+            <div class="book-controls">
+                <button id="prevBtn" type="button">‹ Mbrapa</button>
+                <div id="pageInfo" class="page-info">Faqe 1-2</div>
+                <button id="nextBtn" type="button">Para ›</button>
+            </div>
+
+            <div class="top-tools">
+                <div id="onlineCount" class="online-count">0/48 online</div>
+                <button id="refreshBtn" type="button" title="Refresh">↻</button>
+                <button id="closeBtn" type="button" title="Mbyll">×</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
